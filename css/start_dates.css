@@ -1,0 +1,224 @@
+.calender-object {
+  margin-top: 10px;
+  width: 180px;
+  height: 200px;
+  box-shadow: 0.5px 0.5px 3px 0.5px rgba(0, 0, 0, 0.33);
+  border-radius: 7px;
+  background: #f98800;
+  background: -moz-linear-gradient(30deg,#F98800 0%,#fef0e0 100%);
+  background: -webkit-linear-gradient(30deg,#f98800 0%,#fef0e0 100%);
+  background: -o-linear-gradient(30deg,#f98800 0%,#fef0e0 100%);
+  background: -ms-linear-gradient(30deg,#f98800 0%,#fef0e0 100%);
+  background: linear-gradient(120deg,#f98800 0%,#fef0e0 100%);
+  color: #fff;
+  padding: 15px;
+  font-family: "Open Sans";
+  position: relative;
+}
+
+.core_table {
+  top: -15px;
+}
+
+.course_dates {
+  margin-top: 20px;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 90px;
+  position: relative;
+  top: 83px;
+  left: 40px;
+  color: #000;
+}
+
+.date-details {
+  float: right;
+  top: 15px;
+  color: #000;
+  position: relative;
+  font-size: 0.7rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+  position: relative;
+  margin-left: 4px;
+}
+
+.date sup {
+    top: -35px;
+    position: relative;
+    left: 0px;
+    font-size: 1.0rem;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.month {
+  text-transform: uppercase;
+  position: relative;
+  top: -69px;
+  left: -7px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  display: block;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+}
+
+.next-button {
+  right: 4%;
+}
+
+.pre-button, .next-button {
+  font-size: 20px;
+  user-select: none;
+  position: absolute;
+  top: 53%;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  cursor: pointer;
+  color: #ffffff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='#000')"
+  "progid:DXImageTransform.Microsoft.Alpha(opacity=13)"
+	"progid:DXImageTransform.Microsoft.Blur(pixelradius=2.15, enabled='true')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1, Color='#000')"
+  "progid:DXImageTransform.Microsoft.Alpha(opacity=13)"
+  "progid:DXImageTransform.Microsoft.Blur(pixelradius=2.15, enabled='true')";
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.13));
+}
+
+.pre-button {
+  left: 4%;
+}
+.pre-button:hover, .next-button:hover {
+  -webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1.5, Color='#000')"
+  "progid:DXImageTransform.Microsoft.Alpha(opacity=33)"
+	"progid:DXImageTransform.Microsoft.Blur(pixelradius=2.15, enabled='true')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=1.5, Color='#000')"
+  "progid:DXImageTransform.Microsoft.Alpha(opacity=33)"
+  "progid:DXImageTransform.Microsoft.Blur(pixelradius=2.15, enabled='true')";
+  filter: drop-shadow(1px 1.5px 1px rgba(0,0,0,0.33));
+}
+
+.schedule_title {
+    top: -20px;
+    position: relative;
+}
+
+.slides {
+  display: none;
+}
+
+.year {
+  font-weight: 300;
+  position: relative;
+  top: -75px;
+  left: 0px;
+  font-size: 1.5rem;
+  width: 100%;
+  display: block;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+}
+
+@media screen and (min-width: 888px) {
+  .core_table {
+    top: 0px;
+  }
+
+  .divider {
+    display: flex;
+  }
+
+  .divider:before, .divider:after {
+    content: "";
+    flex: 1;
+  }
+
+  .line {
+    align-items: center;
+    margin-top: -15px;
+  }
+
+  .line:before {
+      background-image: -webkit-linear-gradient(left, #ffffff, #adadad, #000000);
+      background-image: -moz-linear-gradient(left, #ffffff, #adadad, #000000);
+      background-image: -ms-linear-gradient(left, #ffffff, #adadad, #000000);
+      background-image: -o-linear-gradient(left, #ffffff, #adadad, #000000);
+      height: 1px;
+      /* background-image: -webkit-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%); */
+      margin: 0 0em;
+  }
+
+  .line:after {
+      background-image: -webkit-linear-gradient(left, #000000, #adadad, #ffffff);
+      background-image: -moz-linear-gradient(left, #000000, #adadad, #ffffff);
+      background-image: -ms-linear-gradient(left, #000000, #adadad, #ffffff);
+      background-image: -o-linear-gradient(left, #000000, #adadad, #ffffff);
+      height: 1px;
+      /* background-image: -webkit-linear-gradient(left , white 2%, #E6E6E6 50%, white 98%); */
+      margin: 0 0em;
+  }
+
+  .schedule_title {
+    top: 10px;
+  }
+
+  .steth {
+    transform: rotate(90deg);
+    font-size: 20px;
+    margin-left: 7px;
+  }
+
+  .calender-object {
+    margin: 10px auto;
+  }
+
+  .course_dates_container {
+    height: 170px;
+    width: auto;
+  }
+
+  .course_info {
+    float: left;
+  }
+
+  .course_dates {
+    float: right;
+    margin-top: 0px;    
+  }
+}
+
+@media screen and (min-width: 967px) {
+  .course_dates {
+    padding-left: 50px;
+    /*border-style: inset;*/
+    border-width: 0px 0px 0px 1px;
+    border-image: linear-gradient( to bottom, rgb(255, 255, 255), rgb(150, 150, 150), rgb(255, 255, 255) ) 1 100%;
+  }
+}

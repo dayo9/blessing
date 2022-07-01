@@ -1,0 +1,238 @@
+button#submit_btn {
+    margin-left: 7px;
+}
+
+.cf_container {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+}
+
+input#catcher_id, input#uname, input#salt {
+    visibility: hidden;
+}
+
+.cf_frame {
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.33);
+    background: linear-gradient( rgba(80,45,87,0.75), rgba(80,45,87,0.95)), no-repeat center center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 1px rgba(255,255,255,.5);
+    border-radius: 5px;
+    box-shadow: 1px 3px 7px 1px rgba(0,0,0,0.33);
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.cf_form {
+    /* width: 100%; */
+    min-width: 285px !important;
+    height: 100%;
+    font-size: 16px;
+    top: 0px;
+    font-weight: 300;
+    padding-left: 25px;
+    padding-right: 45px;
+    padding-top: 10px;
+    transition: opacity .5s ease, transform .5s ease;
+}
+
+.cf_form-styling {
+    font-family: FontAwesome, 'Open Sans', Arial, Helvetica !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    color: #fff;
+    text-decoration: inherit !important;
+    width: 100%;
+    height: 35px;
+    padding-left: 35px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px !important;
+    background: rgba(255,255,255,.2);
+}
+
+.cf_form-styling option {
+    background: rgb(133,108,137);
+}
+
+.cf_heading {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+
+.cf_form label {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    color: rgba(255,255,255,.7);
+    display: block;
+    visibility: hidden;
+    position: absolute;
+}
+
+.cf_form textarea#msg {
+    padding-top: 10px;
+    color: #ffffff;
+    border-radius: 25px;
+    width: 94%;
+    height: 50px !important;
+}
+
+.cf_form .btn-submit {
+    /*float: left; */
+    padding-top: 0px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    margin-top: -8px;
+}
+
+.cf_form .btn-animate {
+    /*float: left; */
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    color: rgba(255,255,255, 1);
+    padding-top: 0px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 23px;
+    margin-left: 10px;
+    background-color: rgba(250,149,28, 1);
+    left: 0px;
+    top: 0px;
+    /*transition: all .2s ease, top .2s ease .2s, height .2s ease .2s, background-color .2s ease .2s;*/
+}
+
+.cf_form .btn-submit:hover {
+    cursor: pointer;
+    background-color: rgb(233, 130, 5);
+    /*transition: background-color .2s;*/
+}
+
+.cf_form input:focus, textarea:focus {
+    background: rgba(255,255,255,.25);
+    border: none !important;
+    outline: none !important;
+    transition: .2s ease;
+}
+
+.green_msg {
+    height: 15px;
+    width: auto;
+    font-size: 0.8rem;
+    color: rgb(103, 250, 28) !important;
+    margin-bottom: 50px;
+    transition: all ease 0.25s;
+}
+
+h2.cf_heading {
+    margin-bottom: 0px;
+}
+
+h6.cf_heading {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.cf_form i.fa {
+    position: absolute;
+    margin-left: 11px;
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cf_form i.fa.fa-lock {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*https://www.iconfinder.com/icons/226587/clock_icon*/
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /*color: rgba(255, 255, 255, 1);*/ 
+    opacity: 0.6;
+    display: block;
+    background: url('../img/icons/calendar_icon2_15x16.png') no-repeat; /*https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png*/
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+    border-width: thin;
+}
+
+input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder, textarea:-ms-inut-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.8);
+}
+
+input::-ms-input-placeholder, textarea::-ms-inut-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.red_msg {
+    height: 15px;
+    width: auto;
+    font-size: 0.8rem;
+    color: red !important;
+    margin-bottom: 50px;
+    transition: all ease 0.25s;
+}
+
+select {
+    color: #fff !important;
+}
+
+span#status_msg {
+    margin-bottom: 30px !important;
+    color: rgb(103, 250, 28) !important;
+    transition: all .2s ease;
+}
+
+#ss-submit:disabled {
+    opacity: 0;
+    cursor: default;
+}
+
+#ss-submit:enabled {
+    opacity: 1;
+    cursor: pointer;
+}
+
+textarea#input_desc {
+    margin-top: 0px !important;
+}
+
+@media screen and (min-width: 772px) {
+  #captchabox {
+    transform: scale(0.8);
+    /*margin-left: -37%;*/
+  }
+}
+
+@media screen and (min-width: 889px) {
+  #captchabox {
+    transform: scale(0.9);
+    /*margin-left: -20%;*/
+  }
+}
